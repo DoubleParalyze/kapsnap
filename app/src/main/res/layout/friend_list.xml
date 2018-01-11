@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:background="@color/themeLight"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/themePrimary">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="27dp"
+                android:textColor="#FFFFFF"
+                android:text="@string/friends"
+                android:layout_weight="1"/>
+
+
+            <ImageButton
+                android:id="@+id/view_requests"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/friend_requests"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"/>
+
+            <ImageButton
+                android:id="@+id/add_friend"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/plus_button"
+                android:scaleType="fitXY"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/friends_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+
+    <Button
+        android:id="@+id/sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_out"
+        android:background="@color/themePrimary" />
+
+
+</LinearLayout>

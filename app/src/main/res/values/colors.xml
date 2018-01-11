@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="themeLight">#FFFFFF</color>
+    <color name="themePrimary">#F58050</color>
+    <color name="themeMedium">#FF9966</color>
+    <color name="themeInverted">#666688</color>
+    <color name="themeInvertedMedium">#AAAACC</color>
+    <color name="themeInvertedLight">#CCCCEE</color>
+    <color name="videoColor">#4F69B2</color>
+    <color name="photoColor">#E05C46</color>
+</resources>

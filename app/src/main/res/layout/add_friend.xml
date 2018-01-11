@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="@color/themeLight">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/add_friends"
+        android:layout_marginBottom="30dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/themeInverted"
+        android:textAlignment="center"
+        android:text="Type in a friend's username and click 'add' to send a friend request. Once your friend accepts it, they will be added to your friend's list and you can send them snaps "/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel">
+
+
+        <EditText
+            android:layout_width="210dp"
+            android:textSize="18dp"
+            android:textColor="@color/themeInverted"
+            android:layout_height="wrap_content"
+            android:hint="@string/friend_username"
+            android:id="@+id/friend_username"
+             />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:text="@string/add_friend"
+        android:id="@+id/add_new_friend"
+        android:background="@color/themePrimary"/>
+
+
+
+</LinearLayout>

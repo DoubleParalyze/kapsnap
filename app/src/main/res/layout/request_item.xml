@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/request_full_name"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/themeInverted"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:text="@string/full_name_default" />
+
+    <TextView
+        android:id="@+id/request_username"
+        android:textSize="20dp"
+        android:textColor="@color/themeInvertedMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        android:text="@string/username_default"/>
+
+
+    <ImageButton
+        android:id="@+id/accept_request"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/accept_friend"
+        android:background="@null"
+        android:layout_gravity="center"/>
+
+
+    <ImageButton
+        android:id="@+id/reject_request"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/reject_friend"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"/>
+
+
+</LinearLayout>
